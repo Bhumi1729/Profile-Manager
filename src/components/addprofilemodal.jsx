@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { X, Mail, Phone, MapPin, Tag, User, Briefcase, Code, Clock } from "lucide-react";
 
 const AddProfileModal = ({ isOpen, onClose, onProfileAdded, editingProfile }) => {
-  const GOOGLE_MAPS_API_KEY = "AIzaSyD5Qy894u5ArrGeZdnbI0Liu1LRzNRvFLA";
+  const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY;
   
   const skillOptions = [
     "JavaScript", "Python", "Java", "C", "C++", "C#", "Ruby", "PHP", "Swift",

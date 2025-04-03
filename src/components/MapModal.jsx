@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { MapPin, X, ExternalLink, Globe } from "lucide-react";
 
 const MapModal = ({ location, onClose }) => {
-  const GOOGLE_MAPS_API_KEY = "AIzaSyD5Qy894u5ArrGeZdnbI0Liu1LRzNRvFLA";
+  const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY
   const [isLoading, setIsLoading] = useState(true);
   const [showMap, setShowMap] = useState(false);
   
